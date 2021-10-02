@@ -1,6 +1,6 @@
 # Book-Store-managment-by-java
 
-## Brief for what:
+## Brief: for what:
 
 enabling facilitating way and good experience for client to navigation throw book store software, buy and borrow.
 
