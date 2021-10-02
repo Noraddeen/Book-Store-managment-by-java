@@ -4,7 +4,7 @@
 
 enabling facilitating way and good experience for client to navigation throw book store, buy and borrowing.
 
-enabling managers for access, updating data without caring about managing data and storage and isolating for track their sales.
+enabling managers for access, updating data without concerning about managing data and storage, and facilitation for track their sales.
 
 ## Requeirments
 
