@@ -2,7 +2,7 @@
 
 ## Brief for what:
 
-enabling facilitating way and good experience for client to navigation throw book store, buy and borrowing.
+enabling facilitating way and good experience for client to navigation throw book store software, buy and borrow.
 
 enabling managers for access, updating data without concerning about managing data and storage, and facilitation for track their sales.
 
