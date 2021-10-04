@@ -20,7 +20,7 @@ project has two kind of Forms < UI windows >
    - borrow
 2. manager forms provide UI components for
    - login as adminstration
-   - add and updating books data
+   - add and updating books data { access, add, delete, edit, search, sort}
    - tracking sales
 
 ### Model Requirements:
