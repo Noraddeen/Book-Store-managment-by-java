@@ -29,6 +29,7 @@ Models that include resources and resources managment and businesses logic
 
 - stroge and managment for books, costumers and businesses data
 - businesses logic for functions of buying and Borowing books
+- design UML
 
 ### Binding Requirements:
 
