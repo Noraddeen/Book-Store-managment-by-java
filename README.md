@@ -22,9 +22,7 @@ project has two kind of Forms < UI windows >
    - login as adminstration
    - add and updating books data { access, add, delete, edit, search, sort}
    - tracking sales
-h
-hop
-fyu'
+
 ### Model Requirements:
 
 Models that include resources and resources managment and businesses logic
