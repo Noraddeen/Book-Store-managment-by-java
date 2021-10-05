@@ -6,7 +6,7 @@ public class Manager extends Person {
 	
 	public Manager(String name, String adress, int phone, String email, char[] passWord) throws Exception{
 		
-		super(name, adress, phone, email, passWord);
+		super(name, adress, phone, email, passWord);   // initilize fileds those inherited by super class
 		
 		increaseManagerId++;
 		
