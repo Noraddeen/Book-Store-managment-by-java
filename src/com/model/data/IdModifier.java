@@ -1,6 +1,6 @@
 package com.model.data;
 
-public  abstract class IdModifier {
+public  abstract class IdModifier implements  Serializable{
 	
 	int Id;
 
