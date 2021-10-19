@@ -9,4 +9,4 @@ for { sorting searching } . classes those useing it : ManagerListQueries , Custo
 
 
 # i/O to/from files
-deal with files with one class, and be abstracted from other calsses.
+deal with files with one class, and be abstracted from other lists calsses.
