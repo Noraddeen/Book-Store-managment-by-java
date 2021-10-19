@@ -4,7 +4,8 @@
 for { add delete update} .  classes those useing it : ManagerList , CustomerList , OrderLsit , OrderList
 
 ### ArrayList
-for { sorting searching } . classes those useing it : ManagerListQueries , CustomerListQueries , OrderListQueries , OrderListQueries
+for { sorting searching } . classes those useing it : ManagerListQueries , CustomerListQueries , OrderListQueries , OrderListQueries. 
+
 
 
 
