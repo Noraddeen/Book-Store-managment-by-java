@@ -3,7 +3,7 @@ package com.model.data;
 import java.util.List;
 
 
- enum BookType {
+ enum BookType implements  Serializable{
 	
 	HISTORIC,
 	NOVEL,
@@ -17,7 +17,7 @@ import java.util.List;
 	
 }
 
-public class Book extends IdModifier{
+public class Book extends IdModifier implements  Serializable{
 	
 	static int increaseBookId = 0 ;
 	String title ;
