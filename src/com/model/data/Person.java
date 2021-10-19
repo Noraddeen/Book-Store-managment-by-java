@@ -1,6 +1,6 @@
 package com.model.data;
 
-public abstract class Person extends IdModifier {           // this class will not be instantiated. is for the same fuctions that maanger and customer have common
+public abstract class Person extends IdModifier implements  Serializable{           // this class will not be instantiated. is for the same fuctions that maanger and customer have common
 	
 	
 	
