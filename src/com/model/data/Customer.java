@@ -1,6 +1,6 @@
 package com.model.data;
 
-public class Customer extends Person {
+public class Customer extends Person implements  Serializable {
 	
     static int increaseCustomerId = 0;
     
