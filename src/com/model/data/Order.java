@@ -2,12 +2,12 @@ package com.model.data;
 
 import java.sql.Date;
 
-enum OrderType {
+enum OrderType implements  Serializable{
 	BORROW,
 	BUY
 }
 
-public class Order extends IdModifier {
+public class Order extends IdModifier implements  Serializable {
 	
 	static int IncreaseOrderId = 0;
 	
