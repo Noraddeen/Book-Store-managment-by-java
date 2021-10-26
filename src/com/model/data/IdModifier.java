@@ -4,7 +4,7 @@ public  abstract class IdModifier implements  Serializable{
 	
 	int Id;
 
-	protected int getId() {
+	public int getId() {
 		return Id;
 	}
 
