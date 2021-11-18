@@ -112,7 +112,7 @@ public class ServingClinet extends Thread{
             } // if
         } // foreach
     } // fun
-    private void getClientOrderInLastSession() {
+    private void getClientOrderInLastSession() {             // session is the connection that client is now with server
         System.out.println("number of orders: " + orders.getOrders().size());
         for(Order order : orders.getOrders()){
             if(order.getSession() == clientSocket.getPort())
