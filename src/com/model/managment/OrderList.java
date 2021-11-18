@@ -33,7 +33,7 @@ public class OrderList {
     
     public void add(Order Order) {
    	 orders.add(Order);
-        file.saveAndClose(orders);
+        save();
     }
     public List<Order> getOrders(){
         return orders;
@@ -43,7 +43,7 @@ public class OrderList {
         orders = file.openAndFitch();
     }
 
-    void save() throws IOException {
+    void save() {
         file.saveAndClose(orders);
     }
 }
