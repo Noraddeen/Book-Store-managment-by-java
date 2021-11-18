@@ -16,7 +16,6 @@ public class Order extends IdModifier implements Serializable{
 	String customerId ;
     String bookId;
     int number;
-    OrderType orderType;
     Date orderDate;
 	int session;
 
