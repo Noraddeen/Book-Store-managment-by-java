@@ -122,7 +122,7 @@ public class ServingClinet extends Thread{
 
     private void sendOrdersInfo(Order order){
         Book book = books.getById(Long.parseLong(order.getBook()));
-        out.println("  |  title: "+ book.getTitle() + "  |  author: " + book.getAuther() + "  | number: " + order.getNumber() + "  |  session: " + order.getSession() + "  | date: " + order.getOrderDate());
+        out.println(" | title: "+ book.getTitle() + " | author: " + book.getAuther() + " | number: " + order.getNumber() + " |  session: " + order.getSession() + " | date: " + order.getOrderDate());
     }
 
     private void setOrder() {
