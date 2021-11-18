@@ -5,10 +5,7 @@ import java.io.Serializable;
 import java.util.Date;
 import java.util.Optional;
 
-enum OrderType implements Serializable{
-	BORROW,
-	BUY
-}
+
 
 public class Order extends IdModifier implements Serializable{
 	
