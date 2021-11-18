@@ -1,5 +1,4 @@
 package com.model.data;
-//**** return entity ny generic type or be method return diffirenet obj
 import javax.swing.text.html.Option;
 import java.io.Serializable;
 import java.util.Date;
