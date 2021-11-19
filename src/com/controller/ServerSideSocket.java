@@ -25,7 +25,6 @@ public class ServerSideSocket {
                 clientSocket = serverSocket.accept();
             } catch (IOException e) {
                 System.err.println("Accept failed.");
-                System.exit(1);
             }
             try {
               PrintWriter  out = new PrintWriter(clientSocket.getOutputStream(), true);
