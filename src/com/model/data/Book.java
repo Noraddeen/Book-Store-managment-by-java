@@ -70,7 +70,7 @@ public class Book extends IdModifier implements Serializable , Comparable {
 	}
 	
 	public void setPuplisher(String puplisher){
-		this.author = Check.isAlpha(puplisher, "puplisher");
+		this.puplisher = Check.isAlpha(puplisher, "puplisher");
 	}
 
 	public int getnumber() {
