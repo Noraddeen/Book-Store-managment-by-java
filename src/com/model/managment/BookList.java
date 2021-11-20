@@ -10,8 +10,8 @@ import com.model.data.Customer;
 
 public class BookList {
 
-	 List<Book> books;
-    ListFile<Book> file;
+	static volatile List<Book> books;
+        ListFile<Book> file;
 
 //     public BookList(String str){
 //         books = new ArrayList<>();
