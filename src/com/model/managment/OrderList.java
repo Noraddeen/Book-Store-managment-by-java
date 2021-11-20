@@ -11,8 +11,8 @@ import com.model.data.Order;
 
 public class OrderList {
 	
-	List<Order> orders;
-    ListFile file;
+	static volatile List<Order> orders;
+        ListFile file;
 
 //    public OrderList(String str){
 //        this.orders = new ArrayList<>();
