@@ -104,21 +104,22 @@ public class ServingClinet extends Thread{
     } // fun
 
     private void getClientOrdersInToday() {
-        int today = new Date().getDay();
-        for(Order order : orders.getOrders()){
-            if(order.getOrderDate().getDay() == today &&
-                    Long.parseLong(order.getCustomer()) == remoteCustomer.getId()){
-              sendOrdersInfo(order);
-            } // if
-        } // foreach
+        SimpleDateFormat sdformat = new SimpleDateFormat("yyyy-MM-dd");
+        Date date = new Date();
+        String today = sdformat.format(date);
+
+        orders.getOrders().stream()
+                .filter((order)->sdformat.format(order.getOrderDate()).equals(today))
+                .filter((order)->Long.parseLong(order.getCustomer()) == remoteCustomer.getId())
+                .forEach((order)->sendOrdersInfo(order));// foreach
     } // fun
-    private void getClientOrderInLastSession() {             // session is the connection that client is now with server
-        System.out.println("number of orders: " + orders.getOrders().size());
-        for(Order order : orders.getOrders()){
-            if(order.getSession() == clientSocket.getPort())
-               sendOrdersInfo(order);
-        } // foreach
-    } // fun
+            
+    private void getClientOrderInLastSession() {
+        orders.getOrders().stream()
+                .filter((order)->order.getSession() == clientSocket.getPort())
+                .filter((order)->Long.parseLong(order.getCustomer()) == remoteCustomer.getId())
+                .forEach((order)->sendOrdersInfo(order));
+    }
 
     private void sendOrdersInfo(Order order){
         Book book = books.getById(Long.parseLong(order.getBook()));
