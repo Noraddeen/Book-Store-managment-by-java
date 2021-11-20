@@ -102,6 +102,21 @@ public class ServingClinet extends Thread{
             } // if else
         } // while
     } // fun
+            
+    public void sentAllBook(){
+        List<Book> bookList = books.getBooks();
+        String bookInfo;
+        bookList.stream()
+                .forEach((t)->
+                 out.printf("|id: %-20d|title: %-30s |author: %-25s |number: %-10s |type: %-25s |price: %-20s \n",
+                t.getId(),
+                t.getTitle(),
+                t.getAuther(),
+                t.getnumber(),
+                t.getBooktype(),
+                t.getprice())
+                );
+    }        
 
     private void getClientOrdersInToday() {
         SimpleDateFormat sdformat = new SimpleDateFormat("yyyy-MM-dd");
@@ -167,18 +182,5 @@ public class ServingClinet extends Thread{
         return haveEnoughAmountOfBook;
     } // fun
 
-    public void sentAllBook(){
-        List<Book> bookList = books.getBooks();
-        String bookInfo;
-        for(Book t : bookList) {
-            bookInfo = String.format("|id: %-20d|title: %-30s |author: %-25s |number: %-10s |type: %-25s |price: %-20s \n",
-                    t.getId(),
-                    t.getTitle(),
-                    t.getAuther(),
-                    t.getnumber(),
-                    t.getBooktype(),
-                    t.getprice());
-            out.print(bookInfo);
-        }
-    }
+   
 }
