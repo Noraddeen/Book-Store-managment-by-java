@@ -158,7 +158,6 @@ public class ServingClinet extends Thread{
             boolean haveEnoughBooks = updateBookNumber(bookId, bookNumber);
             if(!haveEnoughBooks){return;}
             int session = clientSocket.getPort();
-            System.out.println(bookNumber);
             orders.add(new Order(""+remoteCustomer.getId(), bookId, bookNumber, session));
         } catch (Exception e) {
             System.out.println(e.getMessage() + " error while Ordering in setOrder function");
