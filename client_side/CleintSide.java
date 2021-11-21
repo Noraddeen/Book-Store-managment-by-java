@@ -34,10 +34,10 @@ public class CleintSide {
               while ((userInput = in.readLine()) != null) {
                   boolean isServerAskForInput = userInput.equals("1");
                   if (isServerAskForInput) {    // 1 if send then is ask for input from client
-                      System.out.print("input here: ");
+                      System.out.print("  :  input here: ");
                       out.println(inputFromKeyport.nextLine());
                   }
-                  System.out.println("echo: " + (isServerAskForInput ? "input done" : userInput));
+                  System.out.println("  :  " + (isServerAskForInput ? "input done" : userInput));
               }
           }catch (StringIndexOutOfBoundsException e){
               System.out.println("size of string from server is 0, "+ e.getMessage());
